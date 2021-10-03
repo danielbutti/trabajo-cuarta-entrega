@@ -1,0 +1,29 @@
+    $theme-color: white;
+    $primary-color: #124f88;
+    $secundary-color: #f7c331;
+    $text-color-inverse: white;
+    $text-color: black;
+    $navbar-shallow-color: #e5e5e5;
+    $menu-mobile-background-color: #3a4460;
+
+    h1 {
+        animation: duration 2s;
+        animation-name: aparecer;
+      }
+
+      p{
+        @if ($text-color == black){
+            color: black;
+               }       @else {
+                color: red;
+            }
+        }
+
+
+        @for $i from 1 through 6 {
+
+          h#{$i}{
+              font-size: $i * 1,5px;
+          }
+        }
+        

@@ -1,0 +1,11 @@
+.foto {
+    width: 90%;
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    display: flex;
+    align-content: center;
+    padding: 10px;
+    font-size: 20px;
+  }

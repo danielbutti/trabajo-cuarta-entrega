@@ -1,0 +1,26 @@
+.redes {
+    padding: 15px;
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    padding: 10px 30px;
+    font-size: 18px;
+    color: $text-color;
+    border-radius: 50px;
+    transform: translate(20px, 20px);
+    line-height: 40px;
+    margin: 20px;
+  
+  a {
+    margin: 10px;
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+.redes-1{
+	animation: duration 2s;
+	&:hover{
+		height: 40px; width: 40px;
+	} 
+
+}

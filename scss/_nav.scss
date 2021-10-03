@@ -1,0 +1,107 @@
+.topheader {
+              box-shadow: 0 4px 5px $navbar-shallow-color;
+              position: fixed;
+
+              background: linear-gradient(
+                90deg,
+                rgba(227, 204, 225, 1) 11%,
+                rgba(173, 167, 217, 1) 45%,
+                rgba(175, 224, 152, 1) 70%,
+                rgba(227, 204, 225, 1) 98%
+              );
+              left: 0;
+              top: 0;
+              width: 100%;
+}
+
+.topnav {
+          display: flex;
+          justify-content: space-between;
+          padding: 10px;
+          max-width: 980px;
+          margin: 0 auto;
+
+          li:hover {
+                      background-color: #e3cce1;
+                      border-radius: 15px;
+}
+}
+
+.logo {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 500px;
+        color: $primary-color;
+        text-decoration: none;
+
+        img {
+              border-radius: 50px;
+}
+              &:hover {
+                      transition: 2s;
+                      font-size: 1rem;
+}
+}
+
+
+.menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 0 15px;
+   }
+
+             a {
+                color: $text-color;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 50px;
+                text-transform: uppercase;
+                text-decoration: none;
+                position: relative;
+}
+}
+.logotype{
+            color: black;
+
+            &:hover {
+                      transition: 2s;
+                      font-size: 1rem;
+}
+}
+
+.menu a::after {
+                content: "";
+                background-color: $secundary-color;
+                position: absolute;
+                left: 0;
+                top: calc(100% + 4px);
+                width: 100%;
+                height: 4px;
+
+                opacity: 0;
+                transition: opacity 0.3s;
+}
+
+.menu a.selected::after,
+.menu a:hover::after {
+                       opacity: 0.8;
+}
+
+.menu a:hover {
+               color: $primary-color;
+}
+
+.open-menu,
+.close-menu {
+              display: none;
+}
+
+.logotype {
+            display: flex;
+            justify-content: center;
+}
